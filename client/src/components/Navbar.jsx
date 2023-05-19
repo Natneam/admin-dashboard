@@ -29,7 +29,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const theme = useTheme();
 
   const [anchorEl, setAnchorEl] = useState(null);
-  const isOpen = anchorEl;
+  const isOpen = anchorEl || false;
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
